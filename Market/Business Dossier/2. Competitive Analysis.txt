@@ -1,0 +1,117 @@
+GroupRecipes:
+-------------
+
+Public: Over forties male and females.
+
+Twitter-related social network where an user has followers and is allowed to 
+follow other people. Any use has the following information: Nickname, place 
+of residence, user name (may be different to his nickname), bio and picture. 
+Users can join to a group to talk about different kind of topics as if it was 
+a forum. Any recipe has the following information: category, cooking method, 
+non-limited tags, cuisine type, serves and time to make it. This website has no 
+ads and provides users with a shopping list to save the ingredients that they 
+have to buy.
+
+Pros: This website has a nice and intuitive interface, a karma system for 
+users and a graphic-based score system (likes and stars). It allows any user 
+to upload a picture to any recipe even if it's not theirs and share preferences 
+and favourites (by using bookmarks). They also can comment any recipe and score 
+comments from other people. It provides a shopping list.
+
+Cons: Classic signup form, not integrated with any social network. It has no 
+integration with any other social network too.
+
+BakeSpace:
+----------
+
+Public: 25 to 35 years old males and females.
+
+Facebook-based social network where a user can share recipes with his friends. 
+For any user, it has a lot of information and a picture. Any recipe has a picture, 
+ingredients, steps to do it, personal notes and a tags-based category system. The 
+singup register form is slow and it has technical problems even with the Facebook 
+integration. Some adds in the site are spotted as harmful by antiviruses.
+
+Pros: Recipes can be put together to make a "cookbook" and recipes can be shared 
+in different social networks.
+
+Cons: Users can't comment in recipes pages, it doesn't provide any kind of shopping 
+list and it has an unsightly interface.
+
+BigOven:
+-------- 
+
+Public: Shops and unknown-aged people.
+
+Twitter-based social network where users follow each other. For any user it has a 
+picture and a nickname. Same recipes template as the mentionated before and ordered 
+by tags (categories are limited). For any recipe the information privded is: category, 
+type of cuisine, cooking method and main ingredient. BigOven allows to score a 
+indirectly by scoring their recipes o directly by using "medals". This site has adds 
+in it.
+ 
+Pros: Facebook-integrated signup in one click, advanced functionalities must be paid, 
+it provides a shopping list, good and simple scores system. 
+
+Cons: It has no integration with Twitter and the website has technical failures.
+
+FoodPals: 
+---------
+Public: 30-50 years olds males and females.
+
+Page focused on a specific audience and bases its operation on registered users display 
+their recipes in order for someone to qualify.
+User only an image and a name is displayed.
+Scoring system based on stars.
+We could say that the system of funding is through advertisers.
+
+Pros: Has a forum where user can answers questions about the operation of the page. Has 
+a system microblogs where each user exposes their interests. Integrates a video section.
+
+Cons: Unintuitive, outdated model. It isn't focused on the social plane. Whenever we try 
+to access any section always get a window to tell us that the browser is not optimized. 
+Labeling system very simple and generic. The video section doesn't correspond to the page 
+itself as they use this section to upload video content unrelated to the topic. In most 
+recipes images not shown.
+
+Nibbledish:
+-----------
+Public: 20-35 years old males and females.
+
+The user has a large amount of information. The user has profile picture. For each recipe 
+has a photo, ingredients, directives, ability to link blogs, notes and a category system 
+based on tags.
+Regarding the social aspect, showing the various users and the recipes made ??by each of 
+them, each with its corresponding photo and description.
+Scoring system based on likes (Facebook).
+No advertising has even the places where they would have checked(Sponsored Links).
+Visitor Tracking System: A user can follow a number of people to see your recipes.
+
+Pros:Very colorful. Focused sight.Well presented photos recipes. Video system oriented 
+cuisine. Large number of tags.
+
+Cons: The RSS system isn't implemented correctly. Not integrated with twitter. Registration 
+only by hand, doesn't  allow integration with other social networks.
+
+Foodbuzz:
+---------
+
+Public: 20-35 years old.
+
+As the application is integrated with social networks, very much users information is known. 
+Each recipe has a photo, ingredients, directives, ability to print the recipe, in addition 
+to a tag-based system categories.
+The page is internally based on a blogging system, whereby each user has one and will be posting 
+the its various recipes, always within the same blog.
+About the social aspect, the page displays the various users and the recipes made ??by each of them, 
+each with a photo collection, description and explanation of how to do it.
+Scoring system based on likes, similar to Facebook.
+Visitor Tracking System: A user can follow a number of people to see your prescriptions (Integration 
+with social networks (Facebook, Twitter)).
+Financing system based on advertisers.
+
+Pros: The first things that users look are the images. Images are the principal focus to captain users. 
+There are different sections of food based on the people affinities.
+
+Cons: There are too much advertising due to some recipes redirect you to an online supermarket. More 
+oriented to a journal rather than a page. The home page is a link to different blogs.

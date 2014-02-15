@@ -1,25 +1,32 @@
-The strategy of our company is going to be the diferentation by…
+The strategy of our company is going to be the diferentation byï¿½
+
+--------------
+La estrategia de nuestra compaÃ±Ã­a se basarÃ¡ en ofrecer un producto
+  nuevo en el sector web, con el fin de convertirnos en referentes
+ de la cocina como red social, de manera sencilla e intuitiva, creando una necesidad
+ con objeto de explotarla.
+-------------
 
 deas:
     - Lista de la compra: La nuestra no es solo texto, va a estar 
 integrada con supermercados para hacer la compra online.
     - Sistema de decir hola: A los mayores de cuarenta le gusta 
-“mantener el contacto (cariñosamene)”. Se podría meter un sistema 
-de saludo como si fuese un mensaje privado dando información de contacto 
+ï¿½mantener el contacto (cariï¿½osamene)ï¿½. Se podrï¿½a meter un sistema 
+de saludo como si fuese un mensaje privado dando informaciï¿½n de contacto 
 (esto es una idea feliz porque se nos puede ir de las manos).
 
 Temas por tratar:
-¿Quien nos va a dar el dinero? Explicarlo en el apartado estrategia
+ï¿½Quien nos va a dar el dinero? Explicarlo en el apartado estrategia
 Publicidad personalizada de marcas y supermercados en la aplicacion
 
-¿Quien lo va a consumir? Explicado en el perfil de los consumidores, 
+ï¿½Quien lo va a consumir? Explicado en el perfil de los consumidores, 
 falta Explicarlo en el apartado estrategia
-Jóvenes a los que les guste cocinar, jóvenes que se independizan, 
+Jï¿½venes a los que les guste cocinar, jï¿½venes que se independizan, 
 gente que ve masterchef
 
-¿Donde gastar el dinero? Explicarlo en costs and investments
+ï¿½Donde gastar el dinero? Explicarlo en costs and investments
 Reinvertir en equipos, servidor, publicidad...
 
-¿Costes? Explicarlo en costs and investments
+ï¿½Costes? Explicarlo en costs and investments
 
 Temas legales a nivel europeo

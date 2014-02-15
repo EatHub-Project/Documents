@@ -1,19 +1,11 @@
-EatHub surge como propuesta para la asignatura de Ingenier�a del Software y Practica Profesional de 4� curso del Grado de Ingineria Informatica. En esta asginatura
-se llevara a cabo el desarrollo de una idea de negocio de manera profesional.
+EatHub surge como propuesta para la asignatura de Ingeniería del Software y Practica Profesional de 4º curso del Grado de Inginería Informática. En esta asginatura se llevará a cabo el desarrollo de una idea de negocio de manera profesional.
 
-Eathub es tambien el nombre del producto que surgira del desarrollo de este proyecto. La idea consiste en un sistema de informacion web de recetas que sea
-cercano a la idea de red social, es decir, una red social de recetas con una idea similar a Instagram de que cada usuario suba su receta y tenga en su red a
-sus amigos con los que compartir las recetas.
+Eathub es también el nombre del producto que surgirá del desarrollo de este proyecto. La idea consiste en un sistema de información web de recetas que sea cercano a la idea de red social, es decir, una red social de recetas con una idea similar a Instagram de que cada usuario suba su receta y tenga en su red a sus amigos con los que compartir las recetas.
 
-Entre sus objetivos: a) Finalizar el proyecto completo, b) Cumplir el 'feedback' recibido de los profesores de la asignatura, c) Ejecutar las tareas de la manera
-mas profesional posible, d) Cumplir con la planificacion de la asignatura, e) aprender a gestionar un equipo para un proyecto profesional dentro de la 
-ingenieria del software y f) Ejecutar pruebas sobre los componentes software para determinar su calidad.
+Entre sus objetivos: a) Finalizar el proyecto completo, b) Cumplir con el 'feedback' recibido de los profesores de la asignatura, c) Ejecutar las tareas de la manera más profesional posible, d) Cumplir con la planificacion de la asignatura, e) Aprender a gestionar un equipo para un proyecto profesional dentro de la Ingeniería del Software y f) Ejecutar pruebas sobre los componentes software para determinar su calidad.
 
-Este proyecto por tanto esta enmarcado dentro de los objetivos de la formacion de los miembros del grupo, y para su desarrollo se emplearan los conocimientos
-aprendidos en asignaturas anteriores como: Proceso Software y Gestion, Ingenieria de Requisitos, Dise�o y Pruebas, Evolucion y Gestion de la Configruacion, 
-Planificaci�n y Gesti�n de Proyectos Informaticos, etc.
+Este proyecto por tanto está enmarcado dentro de los objetivos de la formación de los miembros del grupo, y para su desarrollo se emplearán los conocimientos aprendidos en asignaturas anteriores como: Proceso Software y Gestión, Ingeniería de Requisitos, Diseño y Pruebas, Evolucion y Gestion de la Configruacion, Planificación y Gestión de Proyectos Informaticos, etc.
 
-La elaboracion de este documento es realizada a partir de la primera reunion del equipo, reunion de consititucion, donde se abordaron los problemas iniciales
-y se elaboro un acta de constitucion. (meter referencia al acta).
+La elaboración de este documento es realizada a partir de la primera reunión del equipo, reunión de consititución, donde se abordaron los problemas iniciales y se elaboró un acta de constitución. (meter referencia al acta).
 
 

@@ -1,25 +1,15 @@
-La manera de desarrollar esta idea es muy parecida a la de la creacion de una 'startup', es decir, el ser profesionales nos lleva a plantearnos cuestiones (que se
-exigen en la asignatura) como gestion de equipo, metodologia de desarrollo, presentaciones, tener un producto definido y que se pueda vender, etc. Es por eso, que
-el proyecto se va a llevar a cabo en tres areas de trabajo distintas, por organizacion y enfoque de los recursos humanos: 
-a) area de gestion: encargada de llevar a cabo la gestion del proyecto, que se desarrollara usando PMBOK donde se acometeran las tareas de inicio del proyecto,
-su alcance, la gestion del tiempo, de los recursos humanos, de las comunicaciones y del coste.
-b) area de mercado: encargada de realizar un estudio de mercado y responder a las preguntas del tipo '�Con quien compito?' o '�Quien me va a comprar el producto?',
-asi mismo se encarga de realizar un dossier publicitario de modo que se realice una estrategia de publicidad que ayude a lograr el objetivo de que el proyecto
-sea viable.
-c) area de desarrollo: encargada de la parte tecnica, el cual ira en concordancia con el area de gestion ya que la planificacion realizada dentro de PMBOK debe
-coincidir en los aspectos de desarrollo con la realizada dentro de la metodologia elegida. Realizara el desarrollo, mediante un metodologia y desarrollara el prdoucto
-asi como el resto de entregables propios de un proyecto software.
+La manera de desarrollar esta idea es muy parecida a la de la creacion de una 'startup', es decir, el ser profesionales nos lleva a plantearnos cuestiones (que se exigen en la asignatura) como gestión de equipo, metodología de desarrollo, presentaciones, tener un producto definido y que se pueda vender, etc. Es por eso, que el proyecto se va a llevar a cabo en tres áreas de trabajo distintas, por organización y enfoque de los recursos humanos:
 
-El proyecto por tanto esta formado por (meter miembros) donde a nivel de proyecto y para comunicarnos con el profesor de la asignatura contara como lider con
-Sergio Garc�a Alonso. No obstante, cada area de trabajo contara con un lider propio y unos roles desde esa perspectiva, por tanto los miembros del equipos 
-segun la perspectiva tendran unos roles u otros. Dichos miembros, estaran en una o varias areas de trabajo segun sus habilidades y el enfoque del esfuerzo.
+a) Área de Gestión: encargada de llevar a cabo la gestión del proyecto, que se desarrollará siguiendo PMBOK donde se acometerán las tareas de inicio del proyecto, su alcance, la gestión del tiempo, de los recursos humanos, de las comunicaciones y del coste.
 
-Lo peculiar de este sistema es que se gestionar�n las recetas de un modo similar a como lo hace un Control de 
-Versiones usados en el desarrollo de software. Adem�s, el producto final cuenta con dos caracteristicas a�adidas que le da mas atractivo y pueda ser vendido:
-a) Sistema de afinidad, parecido a un sistema de recomendacion, pero en el cada usuario tiene un 'ADN' que puede editar (y se edita con el uso de la aplicaci�n) y 
-que permite que cuando un usuario decida visitar una receta pueda verlo desde la perspectiva de algun amigo dentro del sistema y obtenga un porcentaje de afinidad,
-por ejemplo, 86%.
-b) Sistema de informacion sobre los productos, de modo que el usuario pueda saber, gracias a los acuerdo con supermercados, donde comprar esos productos y a que
-precio.
+b) Área de Mercado: encargada de realizar un estudio de mercado y responder a las preguntas del tipo '¿Con quién compito?' o '¿Quién me va a comprar el producto?'. Así mismo se encarga de realizar un dossier publicitario de modo que se realice una estrategia de publicidad que ayude a lograr el objetivo de que el proyecto sea viable.
 
+c) Área de Desarrollo: encargada de la parte técnica, el cual irá en concordancia con el Área de gestión ya que la planificación realizada dentro de PMBOK debe coincidir en los aspectos de desarrollo con la realizada dentro de la metodología elegida. Realizará el desarrollo, mediante un metodologia, y desarrollará el producto así como el resto de entregables propios de un proyecto software.
 
+El proyecto por tanto está formado por (meter miembros) donde a nivel de proyecto y para comunicarnos con el profesor de la asignatura contará como líder con
+Sergio García Alonso. No obstante, cada área de trabajo contará con un líder propio y unos roles desde esa perspectiva, por tanto los miembros del equipo según la perspectiva tendrán unos roles u otros. Dichos miembros, estarán en una o varias áreas de trabajo según sus habilidades y el enfoque del esfuerzo.
+
+Lo peculiar de este sistema es que se gestionarán las recetas de un modo similar a como lo hace un Control de Versiones usados en el desarrollo de software. Además, el producto final cuenta con dos caracteristicas añadidas que le da más atractivo y pueda ser vendido:
+a) Sistema de afinidad, parecido a un sistema de recomendación, pero en él cada usuario tiene un 'ADN' que puede editar (y se edita con el uso de la aplicación) y 
+que permite que cuando un usuario decida visitar una receta pueda verlo desde la perspectiva de algún amigo dentro del sistema y obtenga un porcentaje de afinidad, por ejemplo, 86%.
+b) Sistema de información sobre los productos, de modo que el usuario pueda saber, gracias a los acuerdo con supermercados, dónde comprar esos productos y a qué precio.

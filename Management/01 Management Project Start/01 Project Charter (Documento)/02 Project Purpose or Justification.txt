@@ -1,11 +1,9 @@
-EatHub surge como propuesta para la asignatura de Ingeniería del Software y Practica Profesional de 4º curso del Grado de Inginería Informática. En esta asginatura se llevará a cabo el desarrollo de una idea de negocio de manera profesional.
+﻿EatHub starts as a prorposal for the fourth course subject “Software Engineering and Professiona Practice”. In this subject there will be a developing of a business idea following a professional methodology.
 
-Eathub es también el nombre del producto que surgirá del desarrollo de este proyecto. La idea consiste en un sistema de información web de recetas que sea cercano a la idea de red social, es decir, una red social de recetas con una idea similar a Instagram de que cada usuario suba su receta y tenga en su red a sus amigos con los que compartir las recetas.
+Eathub is also the name of the product that will be the result of this Project. The idea consists in a recipes information web system, a social network similar to Instagram where any user can upload his recipe and share them with his friends. 
 
-Entre sus objetivos: a) Finalizar el proyecto completo, b) Cumplir con el 'feedback' recibido de los profesores de la asignatura, c) Ejecutar las tareas de la manera más profesional posible, d) Cumplir con la planificacion de la asignatura, e) Aprender a gestionar un equipo para un proyecto profesional dentro de la Ingeniería del Software y f) Ejecutar pruebas sobre los componentes software para determinar su calidad.
+The goals are: a) Finish the full project, b) Accomplish with the feedback provided by the teachers, c) Execute the task in the more professional way, d) Accomplish with the planification of the subject, e) Learn to manage a team for a professional project framed into the software enginerring, f) Execute test over the software components to determinate their quality.
 
-Este proyecto por tanto está enmarcado dentro de los objetivos de la formación de los miembros del grupo, y para su desarrollo se emplearán los conocimientos aprendidos en asignaturas anteriores como: Proceso Software y Gestión, Ingeniería de Requisitos, Diseño y Pruebas, Evolucion y Gestion de la Configruacion, Planificación y Gestión de Proyectos Informaticos, etc.
+This Project will framed into the objectives of group member’s training  and for this training it will be used the knowledge learnt in previous subjects as Software and Management Process, Requirements Engineering, Evolution and Management of Configuration, Planning and Management of Computer Projects, etc. 
 
-La elaboración de este documento es realizada a partir de la primera reunión del equipo, reunión de consititución, donde se abordaron los problemas iniciales y se elaboró un acta de constitución. (meter referencia al acta).
-
-
+The elaboration of this document is made following the first group meeting, the charter meeting. In this meeting, the group faced the initial problems and made a minute of the meeting {Minutes of meeting February the 14th}.

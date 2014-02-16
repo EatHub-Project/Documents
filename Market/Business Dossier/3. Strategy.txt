@@ -1,29 +1,10 @@
-The strategy of our company is going to be the diferentation by�
-
---------------
-La estrategia de nuestra compañía se basará en ofrecer un producto
-  nuevo en el sector web, con el fin de convertirnos en referentes
- de la cocina como red social, de manera sencilla e intuitiva, creando una necesidad
- con objeto de explotarla.
--------------
-
-deas:
-    - Lista de la compra: La nuestra no es solo texto, va a estar 
-integrada con supermercados para hacer la compra online.
-    - Sistema de decir hola: A los mayores de cuarenta le gusta 
-�mantener el contacto (cari�osamene)�. Se podr�a meter un sistema 
-de saludo como si fuese un mensaje privado dando informaci�n de contacto 
-(esto es una idea feliz porque se nos puede ir de las manos).
+The strategy of the company is going to be the differentiation by the developing of a product completely new in web sector, with the intention of becoming a reference  in the kitchen-related social networks.
+There are a lot of recipes sites on the internet, most of them are blogs and there can be found a few of social networks. EatHub is framed in the second group, but making a difference between the rest and itself: the feature that makes EatHub special is also the base of the business model, the integration of a grocery list linked to online supermarkets. With this, a user can fill his “shopping cart” and then, buy it instead printing the list and going to a supermarket. This feature will also be a funding source by making economic agreements with supermarkets in order to use their services or promoting them.
+The second funding source is the use of personalized ads. Ads will be displayed in function of the product shown.
+The last difference is that the application provides users with a ‘DNA’ the can edit. It is used as an affinity system and is modified every time they use the application. Users can watch a recipe as if they were another friend in order to know if this meal would like to him. 
+The main users are going to be males and females from 18 to 35 years old who already have profiles in Facebook and/or Twitter, who loves cooking and considerate themselves as amateur cooks, looking for some support or improvements to their recipes. A sector of them is expected to be recently independent twenties.
 
 Temas por tratar:
-�Quien nos va a dar el dinero? Explicarlo en el apartado estrategia
-Publicidad personalizada de marcas y supermercados en la aplicacion
-
-�Quien lo va a consumir? Explicado en el perfil de los consumidores, 
-falta Explicarlo en el apartado estrategia
-J�venes a los que les guste cocinar, j�venes que se independizan, 
-gente que ve masterchef
-
 �Donde gastar el dinero? Explicarlo en costs and investments
 Reinvertir en equipos, servidor, publicidad...
 

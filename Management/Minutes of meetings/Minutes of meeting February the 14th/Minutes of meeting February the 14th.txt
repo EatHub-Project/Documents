@@ -8,34 +8,35 @@ the business model and plan the next public presentation.
 
 Participant / Role / Assistance (Yes/No)
 ----------------------------------------
-Sergio García / Analist developer, leader and spokesperson / Yes
-David González / Analist developer / Yes
-Sergio Rodríguez / Analist developer, Coordinator / Yes
-Juan Manuel López / Analist developer / Yes
-Arturo Jiménez / Analist developer, Secretary / Yes
-Antonio León / Analist developer / Yes
-Rafael Vázquez / Analist developer / Yes
+Sergio Garcï¿½a / Analist developer, leader and spokesperson / Yes
+David Gonzï¿½lez / Analist developer / Yes
+Sergio Rodrï¿½guez / Analist developer, Coordinator / Yes
+Juan Manuel Lï¿½pez / Analist developer / Yes
+Arturo Jimï¿½nez / Analist developer, Secretary / Yes
+Antonio Leï¿½n / Analist developer / Yes
+Rafael Vï¿½zquez / Analist developer / Yes
 
 Meeting development:
 --------------------
 The meeting started at the agreed hour (16:00) with the designation 
-of Sergio Rodríguez as coordinator and Arturo Jiménez as secretary. 
+of Sergio Rodrï¿½guez as coordinator and Arturo Jimï¿½nez as secretary. 
 These two roles will be maintained in restant meetings.
-The first issue was the work operative proposed by Sergio Rodríguez 
+The first issue was the work operative proposed by Sergio Rodrï¿½guez 
 which was finally adopted by the team. The proposal consisted in the 
 division of the team in three subgroups differentiated by work areas: 
-the business area (led by Arturo Jiménez), the development area 
-(led by Rafael Vázquez) and the management area (led by Sergio Rodríguez)
+the business area (led by Arturo Jimï¿½nez), the development area 
+(led by Rafael Vï¿½zquez) and the management area (led by Sergio Rodrï¿½guez)
 Later, the team reach an agreement about the application scope 
 (including the business model to implant) to develop as well as the 
 technologies that are going to be used.
 The next issue was an overall cost estimation of the application and 
-the structure of the next formal presentation that’s being performed on 
+the structure of the next formal presentation thatï¿½s being performed on 
 February 18th.
 During the last hour, the team proposed solutions and answers to the 
 different feedbacks received during the presentation performed on 
 February 13th, made an outline of the planification for the first sprint 
 and finally the name of the application was decided.
+The group decided to meet every Tuesday at 17:30.
 
 Agreements reached:
 -------------------
@@ -45,5 +46,5 @@ each one has a leader.
 -          Business model defined.
 -          Next presentation index: front, index, members and roles, 
 work areas, idea & business, cost and planification.
--          Cost: 10 €/hour-technical.
+-          Cost: 10 euros/hour-technical.
 -          Application name: EatHub.

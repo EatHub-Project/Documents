@@ -1,9 +1,15 @@
-﻿EatHub starts as a prorposal for the fourth course subject “Software Engineering and Professiona Practice”. In this subject there will be a developing of a business idea following a professional methodology.
+﻿EatHub starts as a prorposal for the fourth course subject “Software Engineering and Professional Practice”. In this subject there will be a developing of a business idea following a professional methodology.
 
-Eathub is also the name of the product that will be the result of this Project. The idea consists in a recipes information web system, a social network similar to Instagram where any user can upload his recipe and share them with his friends. 
+Eathub is also the name of the product that will be the result of this Project. The idea consists in a recipes information web system, a social network similar to Instagram where any user can upload his or her recipes and share them with his friends. 
 
-The goals are: a) Finish the full project, b) Accomplish with the feedback provided by the teachers, c) Execute the task in the more professional way, d) Accomplish with the planification of the subject, e) Learn to manage a team for a professional project framed into the software enginerring, f) Execute test over the software components to determinate their quality.
+The goals are:
+	a) Finish the full project
+	b) Accomplish with the feedback provided by the teachers
+	c) Execute the task in the most professional way
+	d) Accomplish with the planification of the subject
+	e) Learn to manage a team for a professional project framed into the software engineering
+	f) Execute test over the software components to determinate their quality
 
-This Project will framed into the objectives of group member’s training  and for this training it will be used the knowledge learnt in previous subjects as Software and Management Process, Requirements Engineering, Evolution and Management of Configuration, Planning and Management of Computer Projects, etc. 
+This Project will be framed into the objectives of group member’s training and for this training it will be used the knowledge learnt in previous subjects as Software and Management Process, Requirements Engineering, Evolution and Management of Configuration, Planning and Management of Computer Projects, etc. 
 
 The elaboration of this document is made following the first group meeting, the charter meeting. In this meeting, the group faced the initial problems and made a minute of the meeting {Minutes of meeting February the 14th}.

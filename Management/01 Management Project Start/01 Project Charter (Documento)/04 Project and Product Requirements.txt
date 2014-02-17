@@ -1,5 +1,16 @@
-Los requisitos del proyecto son: a) realizar las presentaciones y entregas segun la planificacion de la asignatura (ISPP)y b) realizar la gestion del proyecto 
-mediante PMBOK para iniciar el proyecto, definir su alcance, gestionar al equipo, y estimar planificacion temporal y costes,
+Requisitos del proyecto
+-----------------------
 
-Los requisitos del producto son:  a) realizar el desarrollo del producto Eathub completo y b) realizar un analisis de mercado y definir una 
-estrategia de publicidad y venta del producto.
+Los requisitos del proyecto son:
+  1) realizar las presentaciones y entregas segun la planificacion de la asignatura (ISPP)
+  2) realizar la gestion del proyecto mediante PMBOK para iniciar el proyecto, definir su alcance, gestionar al equipo, y estimar planificacion temporal y costes.
+  3) realizar una gestión lo suficientemente eficiente para asegurar que el proyecto se desarrolle completamente.
+  4) asistir a las clases para recibir feedback y aprovechar dicho feedback para mejorar el proceso de desarrollo, el producto, etc.
+
+
+Requisitos del producto
+-----------------------
+
+Los requisitos del producto son:  
+  1) realizar el desarrollo del producto Eathub completo
+  2) realizar un analisis de mercado y definir una estrategia de publicidad y venta del producto viables.

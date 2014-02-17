@@ -14,3 +14,22 @@ Requisitos del producto
 Los requisitos del producto son:  
   1) realizar el desarrollo del producto Eathub completo
   2) realizar un analisis de mercado y definir una estrategia de publicidad y venta del producto viables.
+
+
+####################################
+
+Project requirement
+-------------------
+
+Project requirements are:
+  1) do presentations and deliveries as said into subject planification (SIPP).
+  2) do project management following PMBOK guidelines for project starting, scope definition, team management and time and costs planing.
+  3) do a managemen efficient enought for ensure that project is fully developed.
+  4) attend classes to receive feedback and use that feedback to improve development process, product, etc.
+
+Product requirement
+-------------------
+
+Product requirements are:
+  1) eathub product development must be fulfilled.
+  2) do a market survey and define an viable advertising strategy and product sale.

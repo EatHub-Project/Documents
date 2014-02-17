@@ -1,5 +1,6 @@
 1) Team members know how to carry on a profesional software development
 2) Teacher will provide feedback to the team
-3) Team members have all the neccessary tools for carrying on the development
-4) Management team will take care of development planning and planning control rightly
-5) Delivery dates are established and won't change
+3) Team will use the provided feedback to improve the development process and final product
+4) Team members have all the neccessary tools for carrying on the development
+5) Management team will take care of development planning and planning control rightly
+6) Delivery dates are established and won't change

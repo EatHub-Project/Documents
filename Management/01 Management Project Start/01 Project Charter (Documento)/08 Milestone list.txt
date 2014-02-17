@@ -1,0 +1,20 @@
+| Milestone goal					| Milestone name	| Date	|
+|							|			|
+| Project start						| PS			|
+| Requirements elicitation finished			| REF			|
+| Requirements elicitation aproved			| REA			|
+| Project planification finished			| PPF			|
+| Project planification aproved				| PPA			|
+| 'Recipes repository' development finished		| RRepoDF		|
+| 'Recipes repository' testing plan finished		| RRepoTPF		|
+| 'Recipes repository' testings finished		| RRepoTF		|
+| Affinity system development finished			| ASDF			|
+| Affinity system testings finished			| ASTF			|
+| Current 'modules' integration testings finished	| IT1			|
+| Products information system development finished	| PISDF			|
+| Products information system testing plan finished	| PISTPF		|
+| Products information system testings finished		| PISTF			|
+| All 'modules' integration testings finished		| IT2			|
+| Pre-production system testings finished		| PPSTF			|
+| Product quality validation aproved			| PQ			|
+

@@ -2,3 +2,10 @@ Para la aceptacion del proyecto se debe realizar su ejecucion de manera profesio
 o entregables de acuerdo a la misma. Tambien se debe atender al feedback recibido por los profesores de la asignatura. Ademas, el producto debe entregarse
 de acuerdo a lo que se recoja en la documentacion de constitucion en cuanto a alcance y objetivos, y de acuerdo a la planificacion y al coste estimados siendo
 obligatorio que esté completamente desarrollado.
+
+##########################
+
+For project acceptance its ejecution must be carried out proffesionally, subject planing must be fulfilled as well as the presentations and
+deliveries scheduled on it. Also  subject teachers feedback should be taken into account.
+Furthermore, product must be delivered according to what is included into the certificate of incorporation refering to planing and estimated costs, being
+mandatory that product development be fulfilled.

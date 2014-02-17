@@ -1,4 +1,4 @@
-La manera de desarrollar esta idea es muy parecida a la de la creacion de una 'startup', es decir, el ser profesionales nos lleva a plantearnos cuestiones (que se exigen en la asignatura) como gestión de equipo, metodología de desarrollo, presentaciones, tener un producto definido y que se pueda vender, etc. Es por eso, que el proyecto se va a llevar a cabo en tres áreas de trabajo distintas, por organización y enfoque de los recursos humanos:
+﻿La manera de desarrollar esta idea es muy parecida a la de la creacion de una 'startup', es decir, el ser profesionales nos lleva a plantearnos cuestiones (que se exigen en la asignatura) como gestión de equipo, metodología de desarrollo, presentaciones, tener un producto definido y que se pueda vender, etc. Es por eso, que el proyecto se va a llevar a cabo en tres áreas de trabajo distintas, por organización y enfoque de los recursos humanos:
 
 a) Área de Gestión: encargada de llevar a cabo la gestión del proyecto, que se desarrollará siguiendo PMBOK donde se acometerán las tareas de inicio del proyecto, su alcance, la gestión del tiempo, de los recursos humanos, de las comunicaciones y del coste.
 
@@ -13,3 +13,29 @@ Lo peculiar de este sistema es que se gestionarán las recetas de un modo simila
 a) Sistema de afinidad, parecido a un sistema de recomendación, pero en él cada usuario tiene un 'ADN' que puede editar (y se edita con el uso de la aplicación) y 
 que permite que cuando un usuario decida visitar una receta pueda verlo desde la perspectiva de algún amigo dentro del sistema y obtenga un porcentaje de afinidad, por ejemplo, 86%.
 b) Sistema de información sobre los productos, de modo que el usuario pueda saber, gracias a los acuerdo con supermercados, dónde comprar esos productos y a qué precio.
+
+
+Project description
+-------------------
+
+The way that this idea is being developed is very similar to a 'startup' creation, i.e., being profesional leads us to ask questions (demanded in the subject) like teams management, make a defined and salable product, etc.
+The project work is going to be distributed over three different work areas cause of the organization and human resources focus:
+
+  1) Management area: responsible of project management, which will be carried out by following PMBOK guidelines. Regarding project management aspects such as project launch, project scope, time management, human resources, communications and costs will be considered
+  2) Marketing area: responsible of making a market research, asking questions like 'who are my adversaries?' or 'who's going to sell my product?' as well as making a commercial dossier for establishing a commercial strategy that help achiveing the goal of making the project feasible
+  3) Development area: responsible of the technical aspects, this area will follow management area guidelines because the PMBOK planification must agree, regarding development issues, with the choosen methodology planification.
+     Also, this are is responsible of carrying out the development of the product as well as the development of all the deliverables, following a methodology guidelines.
+
+The project team is formed by {members list} and, for communications with the theacher and project-level, it's leader will be Sergio Garcia Alonso.
+However, for every work area there will be a leader and roles defined from a different perspective and team members will work into several work areas 
+according to member skills and workload.
+
+
+Product description
+-------------------
+
+This system peculiarity is that recipes are managed like a version control used in software development does. Furthermore final product
+has two characteristics that makes it more attractive:
+  1) An affinity system, similar to a recomendation system, in wich the users has a 'DNA' that can edit (and it is edited by using the application).
+     This 'DNA' allow users, when they look for a recipe, do that from the perspective of a friend from the system and get an affinity percentage, for example, 86%.
+  2) An information system about all products so that users can know, thanks to agreements with supermarkets, where to buy those products and at what price.

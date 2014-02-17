@@ -1,4 +1,9 @@
-Los riesgos iniciales son: a) no conocer bien los requisitos de la asignatura, b) no conocer bien los requisitos del proyecto y del producto, c) no cumplir con
-la estimacion de tiempo y costes, d) no cumplir con los objetivos del proyecto, e) no utilizar los recusos con los que se disponen, f) desmotivacion o caos
-entre los miembros del grupo, g) abandonar el proyecto por motivos academicos y h) riesgos relacionados con enfermedades de la parte ejecutora u
-otros interesados proximos.
+Los riesgos iniciales son:
+  a) no conocer bien los requisitos de la asignatura
+  b) no conocer bien los requisitos del proyecto y del producto
+  c) no cumplir con la estimacion de tiempo y costes
+  d) no cumplir con los objetivos del proyecto
+  e) no utilizar los recusos con los que se disponen
+  f) desmotivacion o caos entre los miembros del grupo
+  g) abandonar el proyecto por motivos academicos
+  h) riesgos relacionados con enfermedades de la parte ejecutora u otros interesados proximos.

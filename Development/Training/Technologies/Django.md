@@ -1,5 +1,7 @@
 #Django
 
+![Django](./img/django.jpg)
+
 ## Philosophy
 Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design. It tries to encourage the DRY Principle (Don't Repeat Yourself) with a Model-View-Template pattern.
 

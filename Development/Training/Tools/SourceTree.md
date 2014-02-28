@@ -13,7 +13,8 @@ For information about Git, visit the corresponding document under Technologies d
 #### Sidebar
 
 The sidebar provides a quick look into repository branches and remotes.
-> Insert screenshot here
+
+![sidebar](./img/st_sidebar.png)
 
 *Branches* lists local branches of the repository, organized in subfolders if any. It shows the current branch with **bold** format.
 
@@ -26,9 +27,9 @@ The sidebar provides a quick look into repository branches and remotes.
 
 This view shows the current status of the index and working tree. It's similar to the results of ```git status``` command. This is the principal view while working.
 
-> Insert screenshot here
-
 The left side is divided into *working tree* at the bottom, and *index* at the top. 
+
+![file status](./img/st_file_status.png)
 
 ##### Working tree
 
@@ -40,8 +41,6 @@ The **index** shows the files (or changes) that are currently added to the repos
 ##### Diff
 The right side shows changes in the selected file or files, similar to what ```git diff``` does. It displays added and removed lines within files, with a bit of context around them. 
 
-> Insert screenshot here
-
 This view allows to *stage* (add to the index) or discard changes line by line or hunk by hunk. This lets experienced developers futher customize what goes into a commit by staging some parts of a file, and leaving the rest for a different commit.
 
 > *Hunks* are groups of nearby changes.
@@ -50,10 +49,14 @@ This view allows to *stage* (add to the index) or discard changes line by line o
 
 The log view is divided in two main areas. The list of commits at the top, and information about the selected commit at the bottom.
 
+![log](./img/sf_log.png)
+
 The **list of commits** displays by default all the commits in all the branches, their author and the date they were made. It shows a multi-color graph to represent the conexion between commits and branches. It puts a litte tag before the commit to indicate the *current status* of a branch, its latest commit. From here the user can checkout or merge a specific commit.
 
 Below the list SourceTree shows information related to the selected commit, such as the full commit message, changed files, and changed lines in the selected file.
 
 ### Common actions
+...
 
 ### Examples
+....

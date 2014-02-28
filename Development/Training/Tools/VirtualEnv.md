@@ -7,6 +7,17 @@ This will be useful for our development as we can be sure that all the team memb
 
 We will install all the packages needed for our project under a VirtualEnv, and share a common requirements.txt to easily setup the environment with pip.
 
+### What does it look like?
+
+- Outside VirtualEnv, there is a lot of stuff non related to the project:
+
+![without venv](./img/venv1.png)
+
+- Inside VirtualEnv, there are just the required packages for the project to work:
+
+![with venv](./img/venv2.png)
+
+
 ## Instalation
 
 ### Windows

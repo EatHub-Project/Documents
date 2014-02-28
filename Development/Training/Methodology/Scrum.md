@@ -6,7 +6,7 @@ In this document we will give a breaf introduction to Scrum and how the process 
 
 Scrum is a software development methodology, within Agile software development, concretely incremental and iterative development.
 
-![scrum](./img/scrum.png)
+![scrum](./img/scrum_diagram.png)
 
 #### Roles in Scrum
 

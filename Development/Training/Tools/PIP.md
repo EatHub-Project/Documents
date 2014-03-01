@@ -7,6 +7,11 @@ Additionally, pip allows to use **dependency specification files**, commonly nam
 
 ## Installation
 
+### For Windows
+
+1.- First, we have to download the .exe file to install this tool. We can find the link here https://sites.google.com/site/pydatalog/python/pip-for-windows . We must choose correct version for our SO version.
+2.- We execute .exe file and install it. When the instalation ends we must try to use pip to check all is correct.
+
 
 ## Usage examples
 

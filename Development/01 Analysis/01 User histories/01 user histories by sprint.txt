@@ -1,0 +1,43 @@
+Sprint 1
+--------
+1) Como usuario quiero poder crear una receta para compartirla.
+2) Como usuario quiero poder adjuntar fotos a la receta marcando una como principal para enseñarla de manera mas grafica
+3) Como usuario quiero poder definir una lista de ingredientes y sus cantidades para la receta.
+4) Como usuario quiero poder definir el proceso de realizacion de la receta mediante texto, lista de pasos y fotos de manera intercalada.
+5) Como usuario quiero poder añadir informacion extra sobre la receta, como duracion, la cantidad o los comensales, condiciones especiales (celiaco, vegetariano, etc.), dificultad, temporada, sabores, tipo (primer plato, postre, etc.) e idioma.
+6) Como usuario quiero poder crear recetas derivadas de la receta de otro usuario.
+7) Como usuario quiero poder modificar una receta propia manteniendo los cambios en el historial.
+8) Como usuario quiero poder resgistrarme con mi cuenta de correo
+9) Como usuario quiero poder definir atributos basicos de mi perfil, como nombre, correo, avatar e idioma.
+
+
+Sprint 2
+--------
+1) Como usuario quiero que la web tenga una buena experiencia de usuario
+2) Como usuario quiero poder escribir comentarios en las recetas de la web
+3) Como usuario quiero poder votar las recetas de forma positiva o negativa
+4) Seguridad
+5) Internacionalización y localización
+6) Como sponsor quiero que mi marca se muestre junto a determinados ingredientes de la receta
+7) Como responsable del sistema quiero que el sistema sea escalable para soportar el crecimiento de usuarios
+
+
+Sprint 3
+--------
+1) Como responsable del sistema quiero que los usuarios tengan un parámetro de karma dependiente de sus acciones en la web (votos al mismo usuario, comentarios "trolls", número excesivo de votos negativos), y que este parámetro se considere a la hora de permitir ciertas acciones en la web.
+2) Como usuario quiero poder registrarme usando cuentas de otros proveedores (Twitter, Facebook, Google+)
+3) Como usuario quiero poder definir mis parámetros de afinidad en mi perfil.
+4) Como usuario quiero poder definir mis parámetros de afinidad en mi perfil.
+5) Como supermercado quiero que determinadas recetas permitan comprar los ingredientes directamente en mi tienda.
+6) Como sponsor quiero que mi publicidad se muestre a usuarios en una ubicación limitada.
+
+
+Sprint 4
+--------
+1) Como usuario quiero poder actualizar los datos de mi perfil
+2) Como usuario quiero poder borrar una receta manteniendo otras recetas derivadas
+3) Como usuario quiero poder darme de baja del sistema
+4) Como usuario quiero poder visualizar el karma de otros usuarios
+5) Como usuario quiero poder enviar cambios a la receta de otro usuario para que los acepte si así desea
+6) Como usuario quiero poder seguir a otros usuarios para estar al dia de sus novedades
+7) Como usuario quiero poder definir qué usuarios pueden ver recetas con mi afinidad (todos, gente que me sigue, gente a la que sigo)

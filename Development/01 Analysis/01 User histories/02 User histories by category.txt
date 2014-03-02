@@ -1,0 +1,46 @@
+Recipes management
+------------------
+1) As user I want to create a recipe for sharing it
+2) As user I want to attach photos to a recipe choosing one as principal for showing it in a professional way
+3) As user I want to define an ingredients and amounts list for a recipe
+4) As user I want to define the making proccess of the recipe by text, step list and photos interspersedly
+5) As user I want to delete a recipe keeping its derived recipes
+6) As user I want to add extra information about the recipe like duration, amount, guests amount, special conditions (vegetarian, celiac, and so on), hardness, season, flavours, type (main course, dessert, lunch, and so on), language
+7) As user I want to create recipes derived from the recipe property of other user
+8) As user I want to modify an own recipe keeping changes in a record
+
+
+User management
+---------------
+1) As user I want to register using my email
+2) As user I want to unsuscribe from the system
+3) As user I want to define basic attributes of my profile like name, mail, avatar, language
+4) As system administrator I want that the users have a karma parameter depending on their actions on the web (votes to the same user, "troll" comments, excessive negative votes) and that parameter must be considered when allowing certain operations on the web
+5) As user I want to update my profile
+6) As user I want to view other users karma
+7) As user I want to register using other providers accounts (Twitter, facebook and Google+)
+
+
+Social
+------
+1) As user I want to send changes to an other user recipe so he or she accept them if desired
+2) As user I want to write comments in the recipes on the web
+3) As user I want to vote recipes in a positive or negative way
+4) As user I want to follow other users to keep up with him or her news
+
+
+Affinity
+--------
+1) As user I want to see the affinity percentage of a recipe for other user
+2) As user I want to define the affinity parameters on my profile
+3) As user I want to define what users can see my recipes with my affinity (everyone, people following me, people who I follow)
+
+Non functionals
+---------------
+1) As user I want that the web have a good user experience
+2) As system manager I want that the system to be scalable for supporting user number grow
+3) Security
+4) Internacionalizacion and location
+
+
+ 

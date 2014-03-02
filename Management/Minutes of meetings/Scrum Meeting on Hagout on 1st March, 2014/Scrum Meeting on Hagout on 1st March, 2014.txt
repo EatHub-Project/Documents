@@ -1,0 +1,47 @@
+Scrum Meeting on Hagout on 1st March, 2014
+------------------------------------------
+
+Assistants: Rafael Vázquez, Sergio Rodríguez y Arturo Jiménez. All of them are developers.
+Started at 17:00.
+Finished at 19:30.
+
+Meeting
+-------
+
+David Gonzalez was going to assist to the meeting but he arrived too late. Two other members were on a trip and we couldn’t find Juan Manuel López.
+The meeting started at 17:00 remembering how works the Scrum methodology. The first step was to extract the user’s stories. The tasks to do in order to implement them are responsibility of Rafael. The one responsible of taking notes and writing the meeting’s act is Arturo.
+We’re pretending to make a IU scrap about login and sign in.
+In first instance, general objectives were exposed. Sergio explained his objectives.
+A problem was found: Are we going to insert images between the text and how? Yes, we are going to insert them between the text referencing the images in the text stored in the DB.
+We decided that any user can remove their recipes but we are going to save the forks.
+Any recipe will contain this information: Duration, kind of recipe, season, guests, special conditions, difficulty, tastes.
+Sergio proposed to follow a relational model with MongoDB but the idea was rejected.
+Sergio proposed that any user could choose what changes are public, this is: what versions of a recipe are public and what are private. The idea was rejected because it’s hard to implement.
+Any user profile it’s cointaining name, email, picture, language.
+When you want to remove your account, we are going to keep the all the data.
+We decided that relationships between users are going to be like Twitter (followers). 
+Any user can watch another user’s karma.
+Arturo asked if the affinity is going to be dynamic or static. It’s going to be static.
+After elaborating all the Users Stories we have:
+Recipes – 8 US
+Users management – 7 US
+Social – 4 US
+Affinity – 3 US
+Non-functional aspects – 4 US
+Business – 4 US
+Mean: 7,5 US/ Sprint. We’ve decided to make more Users Stories in the first Sprint.
+Later, US were prioritized in three levels: High, Medium & Low Priority.
+Low Priority – 7 US
+Medium Priority – 15 US
+High Priority – 8 US
+David joined to the meeting ten minutes before it finished.
+Finally, we’ve organized all the four sprints. The result is available here: https://trello.com/b/jcneHQEE/eathub-product-backlog-sprints
+
+Agreements
+----------
+
+We are going to insert them between the text referencing the images in the text stored in the DB.
+Sergio proposed that any user could choose what changes are public, this is: what versions of a recipe are public and what are private. The idea was rejected because it’s hard to implement.
+Sergio proposed to follow a relational model with MongoDB but the idea was rejected.
+We decided that relationships between users are going to be like Twitter (followers). 
+Any user can watch another user’s karma.

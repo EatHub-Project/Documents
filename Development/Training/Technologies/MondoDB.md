@@ -1,4 +1,4 @@
-# MongoDB
+﻿# MongoDB
 
 MondoDB is an open-source document database, one of the most used NoSQL databases.
 
@@ -75,8 +75,21 @@ There are more advanced options for querying, like special conditions. These can
 
 We are using Django non-rel with *Django MongoDB Engine* for this project. Because of that, we will not be using default MongoDB commands to manage the database, instead we are using Django model API with a few modifications to define collections, store and query data. More information can be found on Django's document in this section.
 
+#How to install (windows)
+1) Check the windows version whe are using with the command wmic os get osarchitecture
+2) Download the appropiate http://www.mongodb.org/downloads
+3) Unzip the downloaded file in the desired path.
+* Probably we must download a path from de http://support.microsoft.com/kb/2731284
+  for solving memory issues.
+
+#Create the folder where MongoDB will store the data
+1) Go to the folder where MongoDB have been unzipped
+2) Execute md data and md data\db commands
+
+
 ## References
 - [MongoDB official website and overview](http://www.mongodb.org/)
 - [MongoDB docs](http://docs.mongodb.org/manual/)
 - [Introduction to MongoDB (Spanish)](http://www.genbetadev.com/bases-de-datos/una-introduccion-a-mongodb)
 - [Django MongoDB Engine docs](http://django-mongodb-engine.readthedocs.org/)
+- [MongoDB installation instructions](http://docs.mongodb.org/manual/tutorial/install-mongodb-on-windows/)

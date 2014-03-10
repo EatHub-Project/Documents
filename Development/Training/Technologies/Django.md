@@ -23,3 +23,12 @@ Django model is based on relational models. For that reason, and because we are 
 - [Django overview, basic idea](https://docs.djangoproject.com/en/1.5/intro/overview/)
 - [Django starter tutorial, 5 parts](https://docs.djangoproject.com/en/1.5/intro/tutorial01/)
 - [Django mongodb engine documentation](http://django-mongodb-engine.readthedocs.org/en/latest/)
+
+#How to install (windows)
+* For installing Django we will use pip, so you must install pip before
+1) Running a command console, with admin rigths, use command pip install Django
+
+#Development version
+* For installing the development version we will use git, so you must install it before
+1) Download the Django repository using git clone git://github.com/django/django.git django-trunk
+2) Check that python can load Django code using pip install -e django-trunk/

@@ -21,6 +21,8 @@ We will install all the packages needed for our project under a VirtualEnv, and 
 ## Instalation
 
 ### Windows
+* For installing virtualEnv we are going to use pip, so you must install it before
+1) Open a command console an put the command pip install virtualenv
 
 ### Linux
 

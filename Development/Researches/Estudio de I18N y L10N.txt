@@ -1,0 +1,166 @@
+Estudio de I18N y L10N.
+-----------------------
+
+
+Autor: Arturo Jiménez López
+Disponible en: https://www.dropbox.com/s/26s88lo69wig6gi/Estudio%C2%A0de%20I18N%20y%20L10N.pdf
+
+
+Introducción:
+-------------
+
+
+“La internacionalización es el proceso de diseñar software de manera tal que pueda adaptarse a
+diferentes idiomas y regiones sin la necesidad de realizar cambios de ingeniería ni en el código.
+La localización es el proceso de adaptar el software para una región específica mediante la
+adición de componentes específicos de un locale y la traducción de los textos, por lo que
+también se le puede denominar regionalización. No obstante la traducción literal del inglés es la
+más extendida.”
+Wikipedia https://
+es.wikipedia.org/wiki/Internacionalizaci%C3%B3n_y_localizaci%C3%B3n
+
+
+Uso:
+----
+
+
+1. Especificar las cadenas a traducir:
+· Si son cadenas dentro de un archivo *.py:
+Las cadenas de traducción se especifican usando la función _(). (Si, el nombre
+de la función es el carácter guión bajo). Esta función está disponible globalmente
+(o sea como un componente incluido); no es necesario que lo importes.
+En este ejemplo, el texto "Welcome to my site." está marcado como una cadena
+de traducción:
+def my_view(request):
+output = _("Welcome to my site.")
+return HttpResponse(output)
+La función django.utils.translation.gettext() es idéntica a _(). Este ejemplo es
+idéntico al anterior:
+from django.utils.translation import gettext
+def my_view(request):
+output = gettext("Welcome to my site.")
+return HttpResponse(output)
+La mayoría de los desarrolladores prefiere usar _(), debido a que es más corta.
+· Si son cadenas dentro de un template:
+Las traducciones en las plantillas Django usan dos etiquetas de plantilla y una
+sintaxis ligeramente diferente a la del código Python. Para que tus plantillas
+puedan acceder a esas etiquetas coloca {% load i18n %} al principio de tu
+plantilla.
+La etiqueta de plantilla {% trans %} marca una cadena para su traducción:
+<title>{% trans "This is the title." %}</title>
+2. Actualizamos los archivos que contienen las traducciones de estas cadenas mediante el
+comando:
+djangoadmin.
+py makemessages –a
+Esto nos actualice el contenido presente en el archivo django.po que se encuentra en
+locale/idioma_que_sea/LC_MESSAGES
+El contenido de este archivo es del tipo:
+#: path/to/python/module.py:23
+msgid "Welcome to my site." # Cadena a traducir
+msgstr "" # Su traducción
+3. Una vez que acabamos de traducir, ejecutamos el comando:
+djangoadmin.
+py compilemessages
+Con esto se generan los archivos .mo, con lo que la traducción está lista ya.
+4. Para que la traducción funcione correctamente, movemos la carpeta locale con los archivos
+que se han generado en el directorio del proyecto de la aplicación (en el que están models.py,
+views.py, etc.).
+
+
+Instalación:
+------------
+
+
+1. Actualizar settings.py
+En primer lugar debemos asegurarnos de que USER_I18N es igual a TRUE, esto viene por
+defecto.
+LANGUAGE_CODE controla el lenguaje por defecto que tendrá nuestro sitio, si solo
+necesitamos dar soporte a un lenguaje lo tenemos que especificar aquí. En nuestro caso no hay
+que tocar nada, ya que viene por defecto con soporte en inglés.
+En cuanto a MIDDLEWARE_CLASSES, hay que asegurarse de que se tienen estos elementos
+y en el siguiente orden:
+MIDDLEWARE_CLASSES = (
+'django.middleware.common.CommonMiddleware',
+'django.contrib.sessions.middleware.SessionMiddleware',
+'django.contrib.auth.middleware.AuthenticationMiddleware',
+'django.middleware.locale.LocaleMiddleware',
+)
+2. Obtener la librería gettext. Es la librería GNU de internacionalización (i18n).
+Para Windows:
+· Descargamos lo siguiente
+http://ftp.gnome.org/pub/gnome/binaries/win32/dependencies/gettexttools0.17.
+zi
+p
+·
+http://ftp.gnome.org/pub/gnome/binaries/win32/dependencies/gettextruntime0.1
+7.zip
+· Creamos una carpeta en Archivos de Programa llamada gettextutils
+· Descargamos el contenido de los dos archivos .zip en la carpeta.
+· Acualizamos el SYSTEM PATH, para ello nos vamos a Panel de control >
+Sistema > Opciones Avanzadas > Variables de entorno
+· En la lista de variables de sistema seleccionamos Path y le damos a editar.
+· Añadimos “;C:\Program Files\gettextutils\
+bin” en el campo valor.
+Para Ubuntu:
+sudo aptget
+install gettext
+Para Mac:
+https://gist.github.com/mbillard/1647940
+En caso de estar utilizando el entorno virtual virtualenv basta con añadir al documento
+requirements.txt del protecto la siguiente línea:
+http://pypi.python.org/packages/source/p/pythongettext/
+pythongettext2.1.
+zip
+3. Para hacer una prueba, creamos un template tipo “Hola Mundo” muy básico en el cual añadimos
+un término a traducir:
+{% load i18n %}
+{% trans "Hello" %}
+4. Creamos los archivos de traducciones
+Desde la terminal, creamos el directorio “locale”
+mkdir locale
+Después, creamos los archivos que se encargaran de la traducción al inglés y al español:
+djangoadmin.
+py makemessages l
+en
+djangoadmin.
+py makemessages l
+sv
+5. Tras traducir la cadena “Hello”, compilamos los archivos para que la traducción se pueda
+realizar:djangoadmin.
+py compilemessages
+
+
+Cómo permitir al usuario cambiar el lenguaje de la sesión:
+----------------------------------------------------------
+
+
+Asegurarnos de que tenemos la siguiente línea en MIDDLEWARE_CLASSES (mirad
+settings.py):
+MIDDLEWARE_CLASSES = ( ... 'django.middleware.locale.LocaleMiddleware', ... )
+Con lo cual Django buscará la preferencia del lenguaje en el siguiente orden:
+1. request.session['django_language'];
+2. request.COOKIES[settings.LANGUAGE_COOKIE_NAME];
+3. every language in request.META['HTTP_ACCEPT_LANGUAGE'], until accepted one
+is found;
+4. settings.LANGUAGE_CODE.
+Por lo que lo más rápido es reescribir la preferencia del lenguaje de la sesión:
+request.session['django_language']
+Ejemlo:
+def someview (request):
+...
+request.session['django_language'] = 'en'
+...
+
+
+Bibliografía:
+-------------
+
+
+http://djangobook.
+mkaufmann.com.ar/chapter18.html
+http://devdoodles.wordpress.com/2009/02/14/multilanguagesupportinadjangoproject/
+https://www.gnu.org/software/gettext/
+https://docs.djangoproject.com/en/dev/topics/i18n/translation/#gettextonwindows
+http://stackoverflow.com/questions/2605384/howtoexplicitlysetdjangolangaugeindjangoses
+sion
+https://es.wikipedia.org/wiki/Internacionalizaci%C3%B3n_y_localizaci%C3%B3n

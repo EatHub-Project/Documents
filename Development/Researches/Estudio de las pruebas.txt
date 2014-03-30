@@ -1,178 +1,263 @@
-El estudio se encuentra en: https://www.dropbox.com/s/clb8kjnvaf2i033/Estudio%20de%20las%20Pruebas.pdf
-Y en drive: https://drive.google.com/#folders/0BzcEjIBVKA-OQ3J4cFF2SHJfOU0
+El estudio se encuentra en: https://www.dropbox.com/s/m12eadb5horub4t/Estudio%20de%20las%20Pruebas.pdf
+
+
+Estudio de las pruebas
+----------------------
 
 
 Pruebas funcionales
 -------------------
 
+
 Pruebas unitarias
 -----------------
 
-En primer lugar, creamos un proyecto Django al que llamamos “holaTest”. La aplicación se llamará recipesTest.
-Nos vamos a models.py y creamos un modelo de ejemplo que será una receta bastante tonta:
 
+Estas pruebas se utilizan para comprobar que los diferentes módulos del proyecto funcionan correctamente.
+En primer lugar, creamos un proyecto Django al que llamamos “holaTest”. La aplicación se llamará recipesTest.
+ 
+Nos vamos a models.py y creamos un modelo de ejemplo que será una receta bastante tonta:
 from django.db import models
+
+
 class Recipe(models.Model):
-name = models.CharField(max_length=30)
-pub_date = models.DateTimeField(auto_now_add=True, blank=True)
+    name = models.CharField(max_length=30)
+    pub_date = models.DateTimeField(auto_now_add=True, blank=True)
 
 pub_date es la fecha de publicación de la receta. Con “auto_now_add=True, blank=True” conseguimos que la fecha se ponga automáticamente nada más crearla.
 El archivo tests.py es donde deben ir las pruebas unitarias. Dentro de él haremos las siguientes importaciones:
-
 from django.test import TestCase
 from recipesTest.models import Recipe
-
 Y definimos la clase:
-
-class RecipesTestCase(TestCase):
+		class RecipesTestCase(TestCase):
 Dentro de ella, haremos un “constructor” que nos crea una receta de prueba:
-
 def setUp(self):
-Recipe.objects.create(name="jelly")
-
+        Recipe.objects.create(name="jelly")
 Después, definimos un método de test para comprobar que se crea correctamente y que el valor de su nombre es el correcto:
-
 def test_recipe_well_created(self):
-jelly = Recipe.objects.get(name="jelly")
-self.assertEqual(jelly.name, 'jelly')
-self.assertNotEquals(jelly.name, 'cake')
-boolean = "false"
-for character in jelly.name:
-if character.isdigit():
-boolean = "true"
-self.assertEqual(boolean,"false")
-print(jelly.pub_date)
-
+        jelly = Recipe.objects.get(name="jelly")
+        self.assertEqual(jelly.name, 'jelly')
+        self.assertNotEquals(jelly.name, 'cake')
+        boolean = "false"
+        for character in jelly.name:
+            if character.isdigit():
+                boolean = "true"
+        self.assertEqual(boolean,"false")
+        print(jelly.pub_date)
 La estructura del ejemplo es muy simple, primero obtenemos la receta, comprobamos que su nombre es el que hemos declarado en el setUp(self), comprobamos que no se llama de otra forma y, por último, que no contiene ningún dígito. El print está puesto para ver cómo es el formato datetime simplemente, se puede quitar.
 En resumidas cuentas, tests.py queda así:
+ 
 Para ejecutar las pruebas ponemos en la consola:
-
->>manage.py test recipesTest
-
+		>>manage.py test recipesTest
 Lo que nos da un resultado que debe ser:
 Creating test database for alias 'default'...
 2014-03-12 09:08:38.905000+00:00
 .
 ----------------------------------------------------------------------
 Ran 1 test in 0.006s
+
 OK
 Destroying test database for alias 'default'...
+
 Para probar como sería un fallo hago:
-self.assertEqual(jelly.name, 'John Doe')
+self.assertEqual(jelly.name, 'John Doe') 
 En caso de fallo tendríamos en vez de un “OK”:
-Creating test database for alias 'default'...
+	Creating test database for alias 'default'...
 F
 ======================================================================
 FAIL: test_recipe_well_created (recipesTest.tests.RecipesTestCase)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-File "C:\Users\****\PycharmProjects\holaTest\recipesTest\tests.py", line 11, in test_recipe_well_created
-self.assertEqual(jelly.name, 'John Doe')
+  File "C:\Users\****\PycharmProjects\holaTest\recipesTest\tests.py", line 11, in test_recipe_well_created
+    self.assertEqual(jelly.name, 'John Doe')
 AssertionError: u'jelly' != 'John Doe'
+
 ----------------------------------------------------------------------
 Ran 1 test in 0.006s
+
 FAILED (failures=1)
 Destroying test database for alias 'default'...
 
-Pruebas de integración 
+Pruebas de integración
 ----------------------
 
+
 Pruebas de integración: Consiste en realizar pruebas para verificar que un gran conjunto de partes de software funcionan juntos. En EatHub, se harán pruebas de integración entre Django y MongoDB.
-La dinámica de estas pruebas de integración es exactamente igual a la de las pruebas unitarias.
+
+
+La dinámica de estas pruebas de integración es parecida a la de las pruebas unitarias. Se explica en el código siguiente:
+
 
 Ejemplo:
 
+
 Models.py
+
+
 from django.db import models
 from djangotoolbox.fields import ListField
 from django_mongodb_engine.contrib import MongoDBManager
+
+
+
 class Post(models.Model):
-objects = MongoDBManager()
-title = models.CharField()
-text = models.TextField()
-tags = ListField()
-comments = ListField()
+   objects = MongoDBManager()
+   title = models.CharField()
+   text = models.TextField()
+   tags = ListField()
+   comments = ListField()
+
+
+
 Tests.py
+
+
 class SimpleTest(TestCase):
+
+
 def test_post_mongoDB(self):
+
+
 #Se crea el objeto
 post = Post.objects.create(title='Hello MongoDB!', text='Just wanted to drop a note from Django. Cya!', tags=['mongodb', 'django'])
+
+
 #Se inserta en la base de datos
 posts = db.posts
-posts.insert(post)
+post.save()
+
+
 #Se obtiene el objeto que acaba de insertarse
-insertedPost = posts.find_one({"title": "Hello MongoDB!"})
+insertedPost = posts.objects.get(title=’Hello MongoDB!’)
+
+
 #Se comprueba que ningún dato es nulo
 self.assertIsNotNone(insertedPost.title)
 self.assertIsNotNone(insertedPost.text)
 self.assertIsNotNone(insertedPost.tags)
+
+
 #Se comprueba que son idénticos
 self.assertEqual(post.title, insertedPost.title)
 self.assertEqual(post.text, insertedPost.text)
 self.assertTrue(cmp(post.tags,insertedPost.tags))
 
+#Modificamos un atributo
+insertedPost.title = ‘Hello’
+insertedPost.save()
+
+#Comprobamos que se ha modificado
+insertedPost = posts.objects.get(title=’Hello!’)
+self.assertEqual(insertedPost.title, ’Hello!’)
+
+
+#Se elimina de la base de datos
+insertedPost.delete()
+
+#Comprobamos que se ha eliminado
+insertedPost = posts.objects.get(title=’Hello MongoDB!’)
+self.assertIsNone(insertedPost)
+
+
 Pruebas No Funcionales
 ----------------------
+
 
 I18N
 ----
 
+
 Django utiliza la preferencia de idioma del navegador para determinar el idioma en el que debe mostrarse la aplicación web, por tanto, la manera más sencilla de comprobar que se realiza correctamente la internacionalización es cambiando esta preferencia y comprobando que los resultados son los correctos.
+
 En primera instancia buscará en los datos de la sesión, así que en cuanto se haya implementado un menú para la selección de idioma podrá probarse de una manera mucho más simple.
+
 
 Escalabilidad
 -------------
 
+
 Para comprobar este apartado se realizarán pruebas de carga. Para ello se presenta la herramienta Siege.
 Siege es una herramienta para pruebas de carga de servidores web. La herramienta puede simular las peticiones simultaneas GET y POST hacia la web. Se puede especificar la lista de URLs de prueba, las pausas entre peticiones, el tiempo de duración de prueba. Al final de la prueba vamos a obtener los siguientes indicadores:
-? el número de transacciones realizadas en el proceso de prueba;
-? el número medio de transacciones por segundo;
-? duración de la operación más larga y más rápida;
-? el número y porcentaje de la transacciones con éxito/fracaso;
-? el tiempo medio que tardó el servidor para responder;
-? cantidad de datos transferidos y la tasa de transferencia;
-? el número medio de operaciones que el servidor logro hacer simultáneamente.
+
+
+•	el número de transacciones realizadas en el proceso de prueba;
+•	el número medio de transacciones por segundo;
+•	duración de la operación más larga y más rápida;
+•	el número y porcentaje de la transacciones con éxito/fracaso;
+•	el tiempo medio que tardó el servidor para responder;
+•	cantidad de datos transferidos y la tasa de transferencia;
+•	el número medio de operaciones que el servidor logro hacer simultáneamente.
+
+
 Siege se encuentra en los repositorios de todas las distribuciones mas populares. El código fuente está disponible en Freshmeat.
+
+
 Veremos un ejemplo de prueba de carga con siege:
+
+
 $ siege -b -c 1 -r 1000 http://example.com/test.html
-? el parámetro "-b" de siege inicia la prueba de productividad del servidor, es decir siege no hará pausas entre las peticiones;
-? el parámetro "-c" especifica el número de peticiones en paralelo;
-? el parámetro "-r" especifica el número de repeticiones de la prueba
-? el parámetro “1000” indica que hay 1000 conexiones concurrentes al sitio web.
+
+
+•	el parámetro "-b" de siege inicia la prueba de productividad del servidor, es decir siege no hará pausas entre las peticiones;
+•	el parámetro "-c" especifica el número de peticiones en paralelo;
+•	el parámetro "-r" especifica el número de repeticiones de la prueba
+•	el parámetro “1000” indica que hay 1000 conexiones concurrentes al sitio web.
+•	El parámetro 1 indica que sólo hay una petición en paralelo.
+
+
 Como podemos ver este comando hará un mil peticiones continuas una tras otra para obtener un archivo estático test.html desde el servidor web.
+
+
 El resultado de la prueba será parecido a:
+Transactions:                   1000 hits
+Availability:                 100.00 %
+Elapsed time:                  10.97 secs
+Data transferred:               8.95 MB
+Response time:                  0.01 secs
+Transaction rate:              91.16 trans/sec
+Throughput:                     0.82 MB/sec
+Concurrency:                    1.00
+Successful transactions:        1000
+Failed transactions:               0
+Longest transaction:            0.03
+Shortest transaction:           0.00
 
-Transactions: 1000 hits
-Availability: 100.00 %
-Elapsed time: 10.97 secs
-Data transferred: 8.95 MB
-Response time: 0.01 secs
-Transaction rate: 91.16 trans/sec
-Throughput: 0.82 MB/sec
-Concurrency: 1.00
-Successful transactions: 1000
-Failed transactions: 0
-Longest transaction: 0.03
-Shortest transaction: 0.00
 
-En el caso de que sea necesario que Siege navega por varios sitios de la página web, es necesario crear un archivo de texto con todas las URLs que siege tendrá que visitar. En el comando de la prueba habrá que especificar donde esta ubicado el fichero con URLs mediante el parámetro "-f":
+En el caso de que sea necesario que Siege navega por varios sitios de la página web, es necesario crear un archivo de texto con todas las URLs que siege tendrá que visitar. En el comando de la prueba habrá que especificar donde está ubicado el fichero con URLs mediante el parámetro "-f":
+
 
 $ siege -d 5 -c 1000 -r 5 -f ~/urls.txt
 
+
 Extraído de http://quepagina.es/internet/siege-pruebas-de-carga-de-servidor-web.html
+
 
 Seguridad
 ---------
 
-Para este apartado se utilizará una herramienta disponible en la distribución de Linux Kali llamada Vega. Esta herramienta es un escáner y plataforma de pruebas para aplicaciones web open source. Se utilizará para validar la inyección SQL y el Cross-Site Scripting.
+
+Para este apartado se utilizará una herramienta disponible en la distribución de Linux Kali llamada Vega. Esta herramienta es un escáner y plataforma de pruebas para aplicaciones web open source. Se utilizará para validar la inyección SQL, el Cross-Site Scripting y el CSRF.
+
+
 Ejemplo extraído de http://kalilinux.foroactivo.com/t57-tutorial-vega-para-kali-linux-modo-scaner
-Vamos a pasar el escaner a una web que la tenemos en red local.
-Seleccionamos en el menu principal la opción scan arriba a la derecha y pulsamos en Start new scan en el menu principal.
-Introducimos la url a escanear en el campo Scan target y pulsamos en next
-A continuación seleccionamos los módulos que queremos que se ejecuten, podemos elegir los modulos de inyección SQL,XSS,etc y los módulos de procesamiento de respuesta. Pulsamos next.
-Las opciones de autentificación, proporcionan uno o más valores de cookie.Para analizar con una sesión autenticada, obten y extrae un valor de cookie usando el proxy y pégalo en el campo de entrada de cookies.
+
+
+Vamos a pasar el escáner a una web que la tenemos en red local.
+
+
+Seleccionamos en el menú principal la opción scan arriba a la derecha y pulsamos en Start new scan en el menú principal.
+Introducimos la url a escanear en el campo Scan target y pulsamos en next 
+
+A continuación seleccionamos los módulos que queremos que se ejecuten, podemos elegir los módulos de inyección SQL, XSS, CSRF, etc. y los módulos de procesamiento de respuesta. Pulsamos next.
+
+Las opciones de autentificación, proporcionan uno o más valores de cookie. Para analizar con una sesión autenticada, obtén y extrae un valor de cookie usando el proxy y pégalo en el campo de entrada de cookies.
 En parameters agregamos nombres o parámetros para evitar fuzzing durante la exploración.
 Pulsamos finish y dejamos que empiece a trabajar el escáner.
-Una vez terminado el escáner, vemos que en el panel Scan Alerts nos muestra las vulnerabilidades según su riesgo.
-Seleccionamos una vulverabilidad y nos mostrara el informe del bug
+
+Una vez terminado el escáner, vemos que en el panel Scan Alerts nos muestra las  vulnerabilidades según su riesgo.
+ 
+
+Seleccionamos una vulnerabilidad y nos mostrara el informe del bug
+ 
+
 Para testear el uso de HTTPS, la manera más simple es navegar por la aplicación y comprobar las urls.

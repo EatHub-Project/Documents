@@ -1,0 +1,378 @@
+Diseño de las pruebas
+---------------------
+Disponible en: https://www.dropbox.com/s/ypr3re2pqhfirds/Dise%C3%B1o%20de%20las%20pruebas.pdf
+
+
+Pruebas funcionales
+-------------------
+
+
+Pruebas unitarias sobre Pictures
+--------------------------------
+ID 3
+CASO Comprobar URL
+REQUISITO Almacenar información sobre fotos de recetas
+DESCRIPCIÓN No nula. Tipo genérico de una url.
+RESULTADO True
+ID 4
+CASO Comprobar is Main Picture
+REQUISITO Almacenar información sobre fotos de recetas
+DESCRIPCIÓN Comprobar que puede ser true o false, pero no nulo.
+RESULTADO True
+ID 48
+CASO Comprobar is Main Picture
+REQUISITO Almacenar información sobre fotos de recetas
+DESCRIPCIÓN Comprobar que sólo una de las imágenes de la receta puede
+tener el atributo isMainPicture = true.
+RESULTADO True
+ID 5
+CASO Comprobar relación con Step
+REQUISITO Almacenar información sobre pasos de recetas
+DESCRIPCIÓN Comprobar que un paso puede estar representado por una
+imagen.
+RESULTADO True
+ID 45
+CASO Comprobar de Step
+REQUISITO Almacenar información sobre pasos de recetas
+DESCRIPCIÓN Comprobar que procedure es un string no nulo.
+RESULTADO True
+ID 47
+CASO Restricción Step Picture
+REQUISITO Almacenar información sobre recetas
+DESCRIPCIÓN Si una imagen está asociada a un determinado paso, ambas
+entidades deben estar asociadas a la misma receta.
+RESULTADO True
+
+Pruebas unitarias sobre Savour
+------------------------------
+ID 10
+CASO Comprobar todos los sabores
+REQUISITO Almacenar información sobre sabores
+DESCRIPCIÓN Salty != None, >0 y <=99
+Sour != None, >0 y <=99
+Bitter != None, >0 y <=99
+Sweet != None, >0 y <=99
+Spicy != None, >0 y <=99
+RESULTADO True
+ID 48
+CASO Comprobar todos los gustos de un usuario
+REQUISITO Almacenar información sobre sabores
+DESCRIPCIÓN Salty != None, >0 y <=99
+Sour != None, >0 y <=99
+Bitter != None, >0 y <=99
+Sweet != None, >0 y <=99
+Spicy != None, >0 y <=99
+RESULTADO True
+ID 10
+CASO Restricción sobre Savour
+REQUISITO Almacenar información sobre sabores
+DESCRIPCIÓN Una instancia de Savour sólo puede estar asociada a una
+receta o a un usuario, pero no a los dos a la vez.
+RESULTADO True
+Pruebas unitarias sobre Recipe
+ID 6
+CASO Comprobar tiempo de preparación
+REQUISITO Almacenar información sobre recetas
+DESCRIPCIÓN Si no es nulo, tiempo de preparación > 0
+RESULTADO True
+ID 7
+CASO Comprobar tiempo de cocina
+REQUISITO Almacenar información sobre recetas
+DESCRIPCIÓN Si no es nulo, tiempo de cocina > 0
+RESULTADO True
+ID 46
+CASO Restricción Preparation time Cook
+time
+REQUISITO Almacenar información sobre recetas
+DESCRIPCIÓN Sólo uno de los dos puede ser nulo. Los dos no pueden ser nulos
+a la vez.
+RESULTADO True
+ID 8
+CASO Comprobar lista de ingredientes
+REQUISITO Almacenar información sobre recetas
+DESCRIPCIÓN Lista de ingredientes != None y len(LI) > 0.
+Para cada ingrediente hay que comprobar que no es nulo. Tiene
+una cantidad (>0), un nombre, y una referencia al diccionario de
+sinónimos.
+RESULTADO True
+ID 9
+CASO Comprobar comensales o unidades
+REQUISITO Almacenar información sobre recetas
+DESCRIPCIÓN Comensales != None y Comensales.lenght > 0
+RESULTADO True
+ID 14
+CASO Comprobar título
+REQUISITO Almacenar información sobre recetas
+DESCRIPCIÓN 0 <= len(Título) <= 50 y Título != None
+RESULTADO True
+ID 15
+CASO Comprobar descripción
+REQUISITO Almacenar información sobre recetas
+DESCRIPCIÓN 0 <= len(Descripción breve) <= 70 y Descripción breve != None
+RESULTADO True
+ID 16
+CASO Comprobar lista de pasos del procedimiento
+REQUISITO Almacenar información sobre pasos de recetas
+DESCRIPCIÓN len(Lista ordenada de pasos del procedimiento) > 1. Cada paso
+es un párrafo de texto, len(párrafo) > 1 y párrafo != None. Puede
+llevar asociada una foto de la galería. Comprobar que la foto
+puede ser None o ser una foto.
+RESULTADO True
+ID 17
+CASO Comprobar temporalidad
+REQUISITO Almacenar información sobre recetas
+DESCRIPCIÓN Comprobar si es nulo este campo. Si lo es, no pasa nada. Si no
+lo es, mirar si está en la lista de posibles temporalidades. Si no
+está, error.
+RESULTADO True
+ID 18
+CASO Comprobar nacionalidad
+REQUISITO Almacenar información sobre recetas
+DESCRIPCIÓN Crear una receta con este atributo a None y otra que tenga un
+string cualquiera en este mismo atributo. Comprobar que no
+hay problemas creando ninguna de las dos.
+RESULTADO True
+ID 19
+CASO Comprobar condiciones especiales
+REQUISITO Almacenar información sobre recetas
+DESCRIPCIÓN Comprobar si es nula la lista. Si lo es no pasa nada. Si no lo es,
+miramos si todo lo que contenga esta contenida en las posibles
+condiciones especiales. Si no es asi, fallo.
+RESULTADO True
+ID 20
+CASO Comprobar notas adicionales
+REQUISITO Almacenar información sobre recetas
+DESCRIPCIÓN Si no es nulo tiene que ser menor o igual a 50 palabras.
+RESULTADO True
+ID 21
+CASO Comprobar idioma de la receta
+REQUISITO Almacenar información sobre recetas
+DESCRIPCIÓN Comprobar que no sea nulo y que esté en una lista de idiomas
+soportados por el servicio web.
+RESULTADO True
+ID 22
+CASO Comprobar nivel de dificultad
+REQUISITO Almacenar información sobre recetas
+DESCRIPCIÓN Comprobar que es 1, 2 ó 3 en caso de que exista.
+RESULTADO True
+ID 23
+CASO Comprobar etiquetas
+REQUISITO Almacenar información sobre recetas
+DESCRIPCIÓN Comprobar que el campo puede ser nulo o cualquier cadena que
+se le introduzca. No puede haber más de diez etiquetas en una
+receta.
+RESULTADO True
+ID 24
+CASO Comprobar tipo de plato
+REQUISITO Almacenar información sobre recetas
+DESCRIPCIÓN Comprobar si es nulo. Si lo es, no pasa nada. En caso contrario,
+comprobar que el valor esté en la lista. Si no es así, error.
+RESULTADO True
+ID 25
+CASO Comprobar fecha de creación
+REQUISITO Almacenar información sobre recetas
+DESCRIPCIÓN Comprobar que no es nula y que es menor a la fecha actual
+cuando se crea. Si la receta es hija de otra receta, comprobar
+que su fecha de creación es menor que la fecha de creación de
+su padre.
+RESULTADO True
+ID 26
+CASO Comprobar _id
+REQUISITO Almacenar información sobre recetas
+DESCRIPCIÓN Comprobar que no es nulo.
+RESULTADO True
+ID 27
+CASO Comprobar Parent
+REQUISITO Almacenar información sobre recetas
+DESCRIPCIÓN Comprobar si es nulo. Si lo es, no pasa nada. En caso contrario,
+comprobar que el valor esté en la lista. Si no es así, error.
+RESULTADO True
+Pruebas unitarias sobre User
+ID 1
+CASO Comprobar displayName
+REQUISITO Almacenar información sobre usuarios
+DESCRIPCIÓN Puede contener mayúsculas y espacios. Puede repetirse. No
+puede ser nulo.
+RESULTADO True
+ID 28
+CASO Comprobar Country
+REQUISITO Almacenar información sobre localizaciones de usuarios
+DESCRIPCIÓN No puede ser nulo. Debe ser un país dentro de una lista de
+países.
+RESULTADO True
+ID 29
+CASO Comprobar City
+REQUISITO Almacenar información sobre localizaciones de usuarios
+DESCRIPCIÓN Puede ser nulo. Puede ser una cadena cualquiera. Si no es
+nulo, comprobar que Country tampoco lo es.
+RESULTADO True
+ID 31
+CASO Comprobar idioma principal
+REQUISITO Almacenar información sobre usuarios
+DESCRIPCIÓN No debe ser nulo. Tiene que estar en la lista de idiomas
+disponibles.
+RESULTADO True
+ID 32
+CASO Comprobar lista de idiomas adicionales
+REQUISITO Almacenar información sobre usuarios
+DESCRIPCIÓN Puede ser nulo. En caso de no serlo, los idiomas tienen que
+estar contenidos en la lista de idiomas disponibles.
+RESULTADO True
+ID 33
+CASO Comprobar User id
+REQUISITO Almacenar información sobre usuarios
+DESCRIPCIÓN No nulo. Debe existir un auth_user con el mismo id.
+RESULTADO True
+ID 34
+CASO Comprobar Website
+REQUISITO Almacenar información sobre usuarios
+DESCRIPCIÓN Comprobar que puede ser nulo o una cadena tipo url
+cualquiera. Comprobar que empieza por http.
+RESULTADO True
+ID 35
+CASO Comprobar Gender
+REQUISITO Almacenar información sobre usuarios
+DESCRIPCIÓN Comprobar que puede ser otro, masculino o femenino.
+RESULTADO True
+ID 36
+CASO Comprobar cumpleaños
+REQUISITO Almacenar información sobre usuarios
+DESCRIPCIÓN Comprobar que puede ser nulo o un elemento tipo Date anterior
+a la fecha actual.
+RESULTADO True
+ID 37
+CASO Comprobar fecha de última modificación del perfil
+REQUISITO Almacenar información sobre usuarios
+DESCRIPCIÓN Debe ser del tipo Date. No puede ser nulo. Tiene que ser
+anterior a la fecha actual
+RESULTADO True
+ID 38
+CASO Comprobar userName
+REQUISITO Almacenar información sobre usuarios
+DESCRIPCIÓN El nombre de usuario debe ser único en el sistema. Debe tener
+una longitud de más de 4 caracteres y menos de 15. Puede
+contener letras de la “a” a la “z”, números y “_”. No es sensible a
+mayúsculas y minúsculas. No puede ser nulo. No puede
+repetirse.
+RESULTADO True
+ID 40
+CASO Comprobar contraseña
+REQUISITO Almacenar información sobre usuarios
+DESCRIPCIÓN Puede ser una combinación de diversos caracteres y longitud
+mayor o igual que 8.
+RESULTADO True
+ID 41
+CASO Comprobar dirección de correo electrónico
+REQUISITO Almacenar información sobre usuarios
+DESCRIPCIÓN 0 <= len(email) <= 50 e email != None
+RESULTADO True
+ID 42
+CASO Comprobar fecha de registro en EatHub
+REQUISITO Almacenar información sobre usuarios
+DESCRIPCIÓN Esta dirección no se revela a otros usuarios. debe ser tipo
+aaaa@xxx.yyy. No puede estar repetida. No puede ser nula.
+RESULTADO True
+ID 43
+CASO Comprobar fecha de último acceso
+REQUISITO Almacenar información sobre usuarios
+DESCRIPCIÓN Debe ser del tipo datetime. No puede ser nulo. Tiene que ser
+menor que la fecha actual.
+RESULTADO True
+ID 44
+CASO Comprobar id
+REQUISITO Almacenar información sobre usuarios
+DESCRIPCIÓN No puede ser nulo.
+RESULTADO True
+
+
+Pruebas de integración
+----------------------
+
+
+Las pruebas de integración se realizarán introduciendo elementos en la base de datos. Esto
+se hará en Django de un modo un tanto similar al seguido en las pruebas unitarias. El proceso
+será el siguiente:
+? Se crearán diferentes elementos con propiedades distintas también.
+? Se introducirán estos elementos en la base de datos.
+? Se obtendrán de la base de datos.
+? Se comprobará que sus atributos son exactamente iguales a los del elemento inicial.
+? Se realizarán modificaciones en los elementos, se introducirán estas modificaciones
+en la base de datos y se comprobará que los atributos son iguales una vez más.
+? Se eliminarán los elementos de la base de datos.
+? Se comprobará que se han borrado.
+
+
+Pruebas no funcionales
+----------------------
+
+
+Pruebas de I18N & L10N
+----------------------
+
+
+Se realizarán como cualquier prueba de usuario. Los miembros del grupo navegarán por la
+aplicación web cambiando el idioma por defecto del navegador para comprobar que las
+internacionalización se realiza de manera correcta. Cuando se integre la opción que permita
+al usuario escoger el idioma en el que se le mostrará la página, se utilizará este método para
+comprobar el correcto funcionamiento de este apartado también.
+
+
+Pruebas de seguridad
+--------------------
+
+
+Vamos a pasar el escaner a la aplicación web desplegada en red local. Para ello se realiza lo
+siguiente:
+Seleccionamos en el menu principal la opción scan arriba a la derecha y pulsamos en Start new
+scan en el menu principal.
+Introducimos la url a escanear en el campo Scan target y pulsamos en next
+A continuación seleccionamos los módulos que queremos que se ejecuten, podemos elegir los
+modulos de inyección SQL, XSS, CSRF, etc y los módulos de procesamiento de respuesta.
+Pulsamos next.
+Las opciones de autentificación, proporcionan uno o más valores de cookie.Para analizar con
+una sesión autenticada, obten y extrae un valor de cookie usando el proxy y pégalo en el campo
+de entrada de cookies.
+En parameters agregamos nombres o parámetros para evitar fuzzing durante la exploración.
+Pulsamos finish y dejamos que empiece a trabajar el escáner.
+Una vez terminado el escáner , vemos que en el panel Scan Alerts nos muestra las
+vulnerabilidades según su riesgo.
+Seleccionamos una vulverabilidad y nos mostrara el informe del bug
+Para testear el uso de HTTPS, la manera más simple es navegar por la aplicación y comprobar
+las urls.
+Se espera que el servicio tenga habilitado en todo momento el uso de HTTPS, un número muy
+reducido o ninguna vulnerabilidad XSS, CSRF o inyección SQL.
+
+
+Estudio de la escalabilidad
+---------------------------
+
+
+Este apartado se realizará del modo ya comentado en el estudio de las pruebas utilizando la
+herramienta Siege. Se ejecutarán pruebas del tipo:
+$ siege b
+c
+X r
+YYYY http://example.com/test.html
+? el parámetro "b"
+de siege inicia la prueba de productividad del servidor, es decir siege
+no hará pausas entre las peticiones.
+? el parámetro "c"
+especifica el número de peticiones en paralelo.
+? el parámetro "r"
+especifica el número de repeticiones de la prueba
+? el parámetro “YYYY” indica el número de conexiones concurrentes al sitio web.
+? el parámetro “X” indica que hay X peticiones en paralelo.
+Pruebas:
+? El parámetro X será 1, 10, 100 y 1000 manteniendo el parámetro “YYYY” a 1.
+? El parámetro “YYYY” será 1, 10, 100 y 1000 manteniendo el parámetro X a 1.
+Con los datos obtenidos se evaluará el rendimiento del servicio web. Se esperan obtener
+tiempos de respuesta bajos (menos de medio segundo), un ratio de transacción aceptable y
+una disponibilidad cercana al 100%.
+
+
+Bibliografía:
+-------------
+
+
+Estudio de las pruebas.
+http://blog.remarkablelabs.com/2012/11/benchmarkingandloadtestingwithsiege
